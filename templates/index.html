@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            <h1>Marksheet calculator</h1> 
+            {{form.as_p}}<br><br>
+            <input type="submit" value="calculate total marks"> <br><br>
+       <h1> <strong><p>Your marksheet</p> </strong></h1>
+         <label for="aman1">Total marks</label>
+         <input type="text" id="aman1" value="{{total}}" placeholder="here you get your marks"><br><br>
+         <label for="aman1">Percentage</label>
+         <input type="text" id="aman1" value="{{percentage}}" placeholder="here you get your marks"><br><br>
+         <p>Thank you for using our service</p>
+        </form>
+    </body>
+</html>    
